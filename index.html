@@ -3,9 +3,503 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hi there</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Yahya Valeo</title>
+    <meta name="description" content="Website description here" />
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <script src="/js/main.js" defer></script>
   </head>
   <body>
-    <h1>Hi there</h1>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="page-navbar">
+          <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <ul class="social-icons">
+          <li>
+            <a
+              class="github-icon"
+              title="GitHub"
+              href="https://github.com/yahyavaleo"
+            >
+              <span class="visually-hidden">Yahya on GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="medium-icon"
+              title="Medium"
+              href="https://medium.com/@yahya.valeo"
+            >
+              <span class="visually-hidden">Yahya on Medium</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="linkedin-icon"
+              title="LinkedIn"
+              href="https://www.linkedin.com/in/yahyamateen/"
+            >
+              <span class="visually-hidden">Yahya on LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section id="hero" class="hero-section">
+          <div class="hero-content">
+            <img class="hero-welcome" src="/assets/images/ciao.svg" />
+            <h1 class="hero-title">I'm Yahya</h1>
+            <p class="hero-subheading">
+              AI Engineer <span>&bullet;</span> Web Developer
+            </p>
+            <div class="scroll-badge">
+              <img src="/assets/icons/scroll-badge.svg" />
+            </div>
+            <div class="scroll-arrow">
+              <img src="/assets/icons/scroll-arrow.svg" />
+            </div>
+          </div>
+        </section>
+        <section id="experience" class="experience-section">
+          <h2 class="visually-hidden">Experience</h2>
+          <div class="experience-marquee">
+            <div class="marquee-content">
+              <span class="experience-heading">Experience</span>
+              <span class="experience-heading stroke-text">Experience</span>
+              <span class="experience-heading">Experience</span>
+              <span class="experience-heading stroke-text">Experience</span>
+            </div>
+          </div>
+          <article class="experience-content">
+            <p class="experience-statement">
+              I design and develop high performance AI and web solutions with a
+              strong focus on user experience and robustness. I have experience
+              with these frameworks, languages, and tools.
+            </p>
+            <div class="tech-stack">
+              <a class="tech-icon" href="https://pytorch.org/" target="_blank">
+                <img src="/assets/icons/technology/pytorch.png" alt="PyTorch" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://scikit-learn.org/"
+                target="_blank"
+              >
+                <img
+                  src="/assets/icons/technology/sklearn.png"
+                  alt="scikit-learn"
+                />
+              </a>
+              <a class="tech-icon" href="https://numpy.org/" target="_blank">
+                <img src="/assets/icons/technology/numpy.png" alt="NumPy" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://pandas.pydata.org/"
+                target="_blank"
+              >
+                <img src="/assets/icons/technology/pandas.png" alt="Pandas" />
+              </a>
+              <a class="tech-icon" href="https://scipy.org/" target="_blank">
+                <img src="/assets/icons/technology/scipy.png" alt="SciPy" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://www.statsmodels.org/"
+                target="_blank"
+              >
+                <img
+                  src="/assets/icons/technology/statsmodel.png"
+                  alt="StatsModel"
+                />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://matplotlib.org/"
+                target="_blank"
+              >
+                <img
+                  src="/assets/icons/technology/matplotlib.png"
+                  alt="Matplotlib"
+                />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://seaborn.pydata.org/"
+                target="_blank"
+              >
+                <img src="/assets/icons/technology/seaborn.png" alt="Seaborn" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+              >
+                <img src="/assets/icons/technology/html.png" alt="HTML" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+              >
+                <img src="/assets/icons/technology/css.png" alt="CSS" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+              >
+                <img
+                  src="/assets/icons/technology/javascript.png"
+                  alt="JavaScript"
+                />
+              </a>
+              <a class="tech-icon" href="https://nodejs.org/" target="_blank">
+                <img src="/assets/icons/technology/nodejs.png" alt="Node.js" />
+              </a>
+              <a class="tech-icon" href="https://reactjs.org/" target="_blank">
+                <img src="/assets/icons/technology/reactjs.png" alt="ReactJS" />
+              </a>
+              <a class="tech-icon" href="https://isocpp.org/" target="_blank">
+                <img src="/assets/icons/technology/cxx.png" alt="C++" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://platform.openai.com/docs/overview"
+                target="_blank"
+              >
+                <img src="/assets/icons/technology/openai.png" alt="OpenAI" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://www.python.org/"
+                target="_blank"
+              >
+                <img src="/assets/icons/technology/python.png" alt="Python" />
+              </a>
+              <a class="tech-icon" href="https://opencv.org/" target="_blank">
+                <img src="/assets/icons/technology/opencv.png" alt="OpenCV" />
+              </a>
+              <a class="tech-icon" href="https://www.qt.io/" target="_blank">
+                <img src="/assets/icons/technology/qt.png" alt="Qt" />
+              </a>
+              <a class="tech-icon" href="https://onnx.ai/" target="_blank">
+                <img src="/assets/icons/technology/onnx.png" alt="ONNX" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://www.tensorflow.org/tensorboard"
+                target="_blank"
+              >
+                <img
+                  src="/assets/icons/technology/tensorboard.png"
+                  alt="TensorBoard"
+                />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://docs.ultralytics.com/"
+                target="_blank"
+              >
+                <img src="/assets/icons/technology/yolo.png" alt="YOLO" />
+              </a>
+              <a
+                class="tech-icon"
+                href="https://huggingface.co/"
+                target="_blank"
+              >
+                <img
+                  src="/assets/icons/technology/hugging-face.png"
+                  alt="Hugging Face"
+                />
+              </a>
+              <a class="tech-icon" href="https://jupyter.org/" target="_blank">
+                <img src="/assets/icons/technology/jupyter.png" alt="Jupyter" />
+              </a>
+              <a class="tech-icon" href="https://git-scm.com/" target="_blank">
+                <img src="/assets/icons/technology/git.png" alt="Git" />
+              </a>
+            </div>
+          </article>
+        </section>
+        <section id="portfolio" class="portfolio-section">
+          <h2>Portfolio</h2>
+          <article class="project-card">
+            <img
+              class="project-image"
+              src="/assets/images/teesize.png"
+              alt="TeeSize preview"
+            />
+            <div class="project-body">
+              <div class="project-description">
+                <h3 class="project-title">TeeSize</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati eius quae magni numquam dolores eligendi rerum
+                  quaerat
+                </p>
+                <ul>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing</li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/yahyavaleo/teesize"
+                target="_blank"
+              >
+                Learn More
+              </a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              class="project-image"
+              src="/assets/images/thiswebsite.png"
+              alt="This website preview"
+            />
+            <div class="project-body">
+              <div class="project-description">
+                <h3 class="project-title">This Website</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati eius quae magni numquam dolores eligendi rerum
+                  quaerat
+                </p>
+                <ul>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing</li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/yahyavaleo/"
+                target="_blank"
+              >
+                Learn More
+              </a>
+            </div>
+          </article>
+        </section>
+        <section id="articles" class="articles-section">
+          <h2>Articles</h2>
+          <div class="articles-list">
+            <article class="article-accordion">
+              <header class="article-header">
+                <div class="article-data">
+                  <time datetime="2024-06" class="article-date">Jun 2024</time>
+                  <h3 class="article-title">How large language models work</h3>
+                </div>
+                <img class="article-cross" src="/assets/icons/cross.svg" />
+              </header>
+              <div class="article-content">
+                <div class="article-summary">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos error illum vel, eligendi quo molestiae nulla
+                    eos veritatis exercitationem totam! Labore harum itaque
+                    ullam esse voluptates? Temporibus minus animi maxime?Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis eligendi, corrupti quae beatae esse velit, illo
+                    molestias architecto aut ut officiis corporis fugit magnam,
+                    provident doloremque excepturi reprehenderit voluptatem.
+                    Culpa quasi quos, aspernatur perspiciatis rerum sapiente
+                    consequatur facilis soluta et.
+                  </p>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequatur, expedita. Alias expedita deserunt quas
+                      ratione dicta dignissimos assumenda, adipisci harum saepe
+                      facilis magni et laboriosam similique id, ut iste labore?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Officia modi iste culpa!
+                    </li>
+                  </ul>
+                </div>
+                <a class="article-link" href="https://medium.com">
+                  Read Article
+                </a>
+              </div>
+            </article>
+            <article class="article-accordion">
+              <header class="article-header">
+                <div class="article-data">
+                  <time datetime="2024-07" class="article-date">Jul 2024</time>
+                  <h3 class="article-title">Inside OpenAI's new headquarter</h3>
+                </div>
+                <img class="article-cross" src="/assets/icons/cross.svg" />
+              </header>
+              <div class="article-content">
+                <div class="article-summary">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos error illum vel, eligendi quo molestiae nulla
+                    eos veritatis exercitationem totam! Labore harum itaque
+                    ullam esse voluptates? Temporibus minus animi maxime?Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis eligendi, corrupti quae beatae esse velit, illo
+                    molestias architecto aut ut officiis corporis fugit magnam,
+                    provident doloremque excepturi reprehenderit voluptatem.
+                    Culpa quasi quos, aspernatur perspiciatis rerum sapiente
+                    consequatur facilis soluta et.
+                  </p>
+                </div>
+                <a class="article-link" href="https://medium.com">
+                  Read Article
+                </a>
+              </div>
+            </article>
+            <article class="article-accordion">
+              <header class="article-header">
+                <div class="article-data">
+                  <time datetime="2024-06" class="article-date">Jun 2024</time>
+                  <h3 class="article-title">
+                    How large language models work in this century
+                  </h3>
+                </div>
+                <img class="article-cross" src="/assets/icons/cross.svg" />
+              </header>
+              <div class="article-content">
+                <div class="article-summary">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos error illum vel, eligendi quo molestiae nulla
+                    eos veritatis exercitationem totam! Labore harum itaque
+                    ullam esse voluptates? Temporibus minus animi maxime?Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis eligendi, corrupti quae beatae esse velit, illo
+                    molestias architecto aut ut officiis corporis fugit magnam,
+                    provident doloremque excepturi reprehenderit voluptatem.
+                    Culpa quasi quos, aspernatur perspiciatis rerum sapiente
+                    consequatur facilis soluta et.
+                  </p>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequatur, expedita. Alias expedita deserunt quas
+                      ratione dicta dignissimos assumenda, adipisci harum saepe
+                      facilis magni et laboriosam similique id, ut iste labore?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Officia modi iste culpa!
+                    </li>
+                  </ul>
+                </div>
+                <a class="article-link" href="https://medium.com">
+                  Read Article
+                </a>
+              </div>
+            </article>
+            <article class="article-accordion">
+              <header class="article-header">
+                <div class="article-data">
+                  <time datetime="2024-07" class="article-date">Jul 2024</time>
+                  <h3 class="article-title">Inside OpenAI's new headquarter</h3>
+                </div>
+                <img class="article-cross" src="/assets/icons/cross.svg" />
+              </header>
+              <div class="article-content">
+                <div class="article-summary">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos error illum vel, eligendi quo molestiae nulla
+                    eos veritatis exercitationem totam! Labore harum itaque
+                    ullam esse voluptates? Temporibus minus animi maxime?Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis eligendi, corrupti quae beatae esse velit, illo
+                    molestias architecto aut ut officiis corporis fugit magnam,
+                    provident doloremque excepturi reprehenderit voluptatem.
+                    Culpa quasi quos, aspernatur perspiciatis rerum sapiente
+                    consequatur facilis soluta et.
+                  </p>
+                </div>
+                <a class="article-link" href="https://medium.com">
+                  Read Article
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="contact" class="contact-section">
+          <h2>Let's talk!</h2>
+          <!--  "https://formspree.io/f/mblrjzdz" -->
+          <form action="https://example.com" method="post" class="contact-form">
+            <fieldset>
+              <ul class="visible-fields">
+                <li class="name-field">
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    title="Please enter your preferred name"
+                    required
+                  />
+                </li>
+                <li class="email-field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    title="Please enter your email address"
+                    required
+                  />
+                </li>
+                <li class="message-field">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="body"
+                    rows="10"
+                    title="Please enter your message"
+                    required
+                  ></textarea>
+                </li>
+              </ul>
+              <input
+                type="hidden"
+                name="_subject"
+                value="Contact Form Submission"
+                class="visually-hidden"
+              />
+              <input type="text" name="_gotcha" class="visually-hidden" />
+            </fieldset>
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+        </section>
+      </main>
+      <footer class="page-footer">
+        Copyright &#169; <span class="copyright-year"></span> Yahya
+      </footer>
+    </div>
   </body>
 </html>
