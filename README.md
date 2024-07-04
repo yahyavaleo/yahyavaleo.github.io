@@ -8,7 +8,7 @@ This is my personal website that I wrote from scratch to showcase my work.
 
 This is a static website hosted on GitHub Pages. All the styles are located in the `css/` directory and all the JavaScript code is located in the `js/` directory. The assets folder contains the fonts, icons, and images used on this website.
 
-All favicons and the associated `manifest.json` is located in the root directory. Otherwise the browser tries to search for the favicon in the same directory while loading the document, fails to do so, and encounters an _Error 404_ before finally loading the document and requesting the favicon in the correct locations.
+All favicons and the associated `manifest.json` is located in the root directory. Otherwise the browser tries to search for the favicon in the same directory while loading the document, fails to do so, and encounters an _Error 404_ before finally loading the document and requesting the favicon in the correct location.
 
 ## Acknowledgements
 
