@@ -573,6 +573,7 @@ body {
 }
 
 .submit-button {
+  cursor: pointer;
   color: var(--black);
   font-family: var(--font-heading);
   font-weight: 400;
