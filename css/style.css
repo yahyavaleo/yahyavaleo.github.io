@@ -83,6 +83,7 @@ body {
 
 .resume-container {
   z-index: 999;
+  height: auto;
   text-decoration: none;
   color: var(--black);
   background-color: var(--white);
@@ -675,9 +676,9 @@ body {
 
 @media (min-width: 1096px) {
   .resume-container {
-    width: 48px;
-    height: 170px;
+    width: 50px;
     padding: 28px 12px;
+    gap: 20px;
   }
 
   .resume-container span {
