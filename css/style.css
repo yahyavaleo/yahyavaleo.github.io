@@ -86,7 +86,7 @@ body {
   height: auto;
   text-decoration: none;
   color: var(--black);
-  background-color: var(--white);
+  background-color: var(--grey);
   border: 2px solid var(--black);
   box-shadow: 1px 1px 0 0 var(--black);
   display: flex;
@@ -981,6 +981,7 @@ body {
   --primary: #d661ff;
   --gold: #ffcb46;
   --mint: #57ef97;
+  --grey: #f4f4f0;
 
   --font-fallback: Arial, sans-serif;
   --font-body: Roobert, var(--font-fallback);
