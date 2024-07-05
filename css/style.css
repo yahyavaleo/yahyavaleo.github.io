@@ -325,13 +325,27 @@ body {
   text-overflow: ellipsis;
 }
 
-.project-body li {
+.project-description {
+  overflow: hidden;
+}
+
+.project-description li {
   list-style-position: outside;
   list-style-image: url("/assets/icons/bullet.svg");
 }
 
-.project-description {
-  overflow: hidden;
+.project-description a {
+  color: var(--black);
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: 3px;
+}
+
+.project-description a:hover {
+  font-weight: 700;
+}
+
+.project-description a:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .project-title {
@@ -743,22 +757,26 @@ body {
     line-height: 24px;
   }
 
-  .project-description {
-    height: 330px;
-  }
-
   .project-title {
     margin-top: 10px;
     margin-bottom: 32px;
     font-size: 40px;
   }
 
-  .project-body ul {
-    margin: 24px 0;
+  .project-description {
+    height: 330px;
+  }
+
+  .project-description p {
+    margin: 16px 0;
+  }
+
+  .project-description ul {
+    margin: 16px 0;
     padding-left: 24px;
   }
 
-  .project-body li {
+  .project-description li {
     margin: 8px 0;
     padding-left: 8px;
   }
