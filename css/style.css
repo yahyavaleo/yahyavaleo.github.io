@@ -75,6 +75,52 @@ body {
   overflow: hidden;
 }
 
+/* === Resume container : BEGIN === */
+
+.wrapper {
+  position: relative;
+}
+
+.resume-container {
+  z-index: 999;
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  box-shadow: 1px 1px 0 0 var(--black);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+
+.resume-container:hover {
+  box-shadow: 4px 4px 0 0 var(--black);
+}
+
+.resume-container:active {
+  box-shadow: 4px 4px 0 0 var(--gold);
+}
+
+.resume-container span {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  font-family: Arial;
+  font-weight: 700;
+}
+
+.resume-container img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* === Resume container : BEGIN === */
+
 /* === Page header : BEGIN === */
 
 .page-header {
@@ -628,6 +674,18 @@ body {
 /* === Page footer : END === */
 
 @media (min-width: 1096px) {
+  .resume-container {
+    width: 48px;
+    height: 170px;
+    padding: 28px 12px;
+  }
+
+  .resume-container span {
+    font-size: 14px;
+    line-height: 48px;
+    padding-block-end: 3px;
+  }
+
   .page-header {
     z-index: 999;
     width: 100vw;
