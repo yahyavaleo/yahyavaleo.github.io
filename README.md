@@ -25,4 +25,3 @@ This project uses the following icons:
 - [GitHub](https://icons8.com/icon/3tC9EQumUAuq/github) icon by [Icons8](https://icons8.com)
 - [Medium](https://icons8.com/icon/wYiGNIiB4OKj/medium) icon by [Icons8](https://icons8.com)
 - [LinkedIn](https://icons8.com/icon/IuI5Yd3J3qcC/linkedin) icon by [Icons8](https://icons8.com)
-- [Pdf icons created by Smashicons - Flaticon](https://www.flaticon.com/free-icons/pdf)
