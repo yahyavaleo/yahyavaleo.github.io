@@ -47,11 +47,11 @@
           </li>
           <li>
             <a
-              class="medium-icon"
-              title="Medium"
-              href="https://medium.com/@yahya.valeo"
+              class="kaggle-icon"
+              title="Kaggle"
+              href="https://www.kaggle.com/yahyavaleo"
             >
-              <span class="visually-hidden">Yahya on Medium</span>
+              <span class="visually-hidden">Yahya on Kaggle</span>
             </a>
           </li>
           <li>
@@ -338,9 +338,12 @@
             <article class="article-accordion">
               <header class="article-header">
                 <div class="article-data">
-                  <time datetime="2024-06" class="article-date">Jun 2024</time>
-                  <h3 class="article-title" title="How to make icecream">
-                    How to make icecream
+                  <time datetime="2024-07" class="article-date">Jul 2024</time>
+                  <h3
+                    class="article-title"
+                    title="My solution to the Titanic competition"
+                  >
+                    My solution to the Titanic competition
                   </h3>
                 </div>
                 <img class="article-cross" src="/assets/icons/cross.svg" />
@@ -348,32 +351,53 @@
               <div class="article-content">
                 <div class="article-summary">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos error illum vel, eligendi quo molestiae nulla
-                    eos veritatis exercitationem totam! Labore harum itaque
-                    ullam esse voluptates? Temporibus minus animi maxime?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit.
-                    Blanditiis eligendi, corrupti quae beatae esse velit, illo
-                    molestias architecto aut ut officiis corporis fugit magnam,
-                    provident doloremque excepturi reprehenderit voluptatem.
-                    Culpa quasi quos, aspernatur perspiciatis rerum sapiente
-                    consequatur facilis soluta et.
+                    The
+                    <a
+                      href="https://www.kaggle.com/competitions/titanic/overview"
+                      title="Titanic competition on Kaggle"
+                    >
+                      Titanic competition
+                    </a>
+                    is based on the infamous shipwreck of Titanic in
+                    <time datetime="1912-04-15">April 15, 1912</time>. The goal
+                    is to create a model that predicts which passengers survived
+                    the Titanic shipwreck.
                   </p>
                   <ul>
                     <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Consequatur, expedita. Alias expedita deserunt quas
-                      ratione dicta dignissimos assumenda, adipisci harum saepe
-                      facilis magni et laboriosam similique id, ut iste labore?
+                      I did a detailed analysis of the input features in order
+                      to understand what impact does each feature has on the
+                      target.
                     </li>
                     <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Officia modi iste culpa!
+                      After selecting suitable features, I developed strategies
+                      to fill in missing values and created suitable encoding
+                      schemes for non-numerical features.
+                    </li>
+                    <li>
+                      I developed a complete pipeline to automatically perform
+                      the necessary data preprocessing.
+                    </li>
+                    <li>
+                      Then, I tested a lot of commonly used classification
+                      models. From which, I found out that Support Vector
+                      Machine Classifier and Random Forest Classifer are the
+                      most promising.
+                    </li>
+                    <li>
+                      Finally, I ran grid searches on these two classifiers to
+                      find the best set of parameters. The best model achieved
+                      roughly 82% accuracy on cross-validation, and I used this
+                      model to predict which passengers survived in the test
+                      set.
                     </li>
                   </ul>
                 </div>
-                <a class="article-link" href="https://medium.com">
-                  Read Article
+                <a
+                  class="article-link"
+                  href="https://www.kaggle.com/code/yahyavaleo/titanic"
+                >
+                  Notebook
                 </a>
               </div>
             </article>
@@ -381,11 +405,8 @@
               <header class="article-header">
                 <div class="article-data">
                   <time datetime="2024-05" class="article-date">May 2024</time>
-                  <h3
-                    class="article-title"
-                    title="Inside the mind of a master procrastinator"
-                  >
-                    Inside the mind of a master procrastinator
+                  <h3 class="article-title" title="Lorem ipsum dolor sit amet">
+                    Lorem ipsum dolor sit amet
                   </h3>
                 </div>
                 <img class="article-cross" src="/assets/icons/cross.svg" />
@@ -414,11 +435,8 @@
               <header class="article-header">
                 <div class="article-data">
                   <time datetime="2024-04" class="article-date">Apr 2024</time>
-                  <h3
-                    class="article-title"
-                    title="How to speak so that people want to listen"
-                  >
-                    How to speak so that people want to listen
+                  <h3 class="article-title" title="Lorem ipsum dolor sit amet">
+                    Lorem ipsum dolor sit amet
                   </h3>
                 </div>
                 <img class="article-cross" src="/assets/icons/cross.svg" />

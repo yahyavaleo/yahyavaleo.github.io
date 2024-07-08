@@ -179,7 +179,7 @@ body {
 .social-icons a {
   display: block;
   background-size: contain;
-  transition: transform 0.2s ease-out;
+  transition: transform 0.1s ease-out;
 }
 
 .social-icons a:hover {
@@ -190,8 +190,8 @@ body {
   background-image: url("/assets/icons/github.png");
 }
 
-.medium-icon {
-  background-image: url("/assets/icons/medium.png");
+.kaggle-icon {
+  background-image: url("/assets/icons/kaggle.png");
 }
 
 .linkedin-icon {
@@ -511,6 +511,20 @@ body {
 .article-summary li {
   list-style-position: outside;
   list-style-image: url("/assets/icons/bullet.svg");
+}
+
+.article-summary a {
+  color: var(--black);
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: 3px;
+}
+
+.article-summary a:hover {
+  font-weight: 700;
+}
+
+.article-summary a:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .article-link {
