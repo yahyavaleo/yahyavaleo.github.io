@@ -688,6 +688,14 @@ body {
 /* === Page footer : END === */
 
 @media (min-width: 1096px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
   .resume-container {
     width: 50px;
     padding: 28px 12px;
