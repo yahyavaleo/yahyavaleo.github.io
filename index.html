@@ -341,9 +341,9 @@
                   <time datetime="2024-07" class="article-date">Jul 2024</time>
                   <h3
                     class="article-title"
-                    title="My solution to the Titanic competition"
+                    title="Predicting the survivors of Titanic"
                   >
-                    My solution to the Titanic competition
+                    Predicting the survivors of Titanic
                   </h3>
                 </div>
                 <img class="article-cross" src="/assets/icons/cross.svg" />
@@ -406,9 +406,9 @@
             <article class="article-accordion">
               <header class="article-header">
                 <div class="article-data">
-                  <time datetime="2024-05" class="article-date">May 2024</time>
-                  <h3 class="article-title" title="Lorem ipsum dolor sit amet">
-                    Lorem ipsum dolor sit amet
+                  <time datetime="2024-07" class="article-date">Jul 2024</time>
+                  <h3 class="article-title" title="Estimating bank churn">
+                    Estimating bank churn
                   </h3>
                 </div>
                 <img class="article-cross" src="/assets/icons/cross.svg" />
@@ -416,70 +416,66 @@
               <div class="article-content">
                 <div class="article-summary">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos error illum vel, eligendi quo molestiae nulla
-                    eos veritatis exercitationem totam! Labore harum itaque
-                    ullam esse voluptates? Temporibus minus animi maxime?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit.
-                    Blanditiis eligendi, corrupti quae beatae esse velit, illo
-                    molestias architecto aut ut officiis corporis fugit magnam,
-                    provident doloremque excepturi reprehenderit voluptatem.
-                    Culpa quasi quos, aspernatur perspiciatis rerum sapiente
-                    consequatur facilis soluta et.
-                  </p>
-                </div>
-                <a
-                  class="article-link"
-                  href="https://medium.com"
-                  target="_blank"
-                >
-                  Read Article
-                </a>
-              </div>
-            </article>
-            <article class="article-accordion">
-              <header class="article-header">
-                <div class="article-data">
-                  <time datetime="2024-04" class="article-date">Apr 2024</time>
-                  <h3 class="article-title" title="Lorem ipsum dolor sit amet">
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                </div>
-                <img class="article-cross" src="/assets/icons/cross.svg" />
-              </header>
-              <div class="article-content">
-                <div class="article-summary">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos error illum vel, eligendi quo molestiae nulla
-                    eos veritatis exercitationem totam! Labore harum itaque
-                    ullam esse voluptates? Temporibus minus animi maxime?Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit.
-                    Blanditiis eligendi, corrupti quae beatae esse velit, illo
-                    molestias architecto aut ut officiis corporis fugit magnam,
-                    provident doloremque excepturi reprehenderit voluptatem.
-                    Culpa quasi quos, aspernatur perspiciatis rerum sapiente
-                    consequatur facilis soluta et.
+                    The goal of the
+                    <a
+                      href="https://www.kaggle.com/competitions/playground-series-s4e1"
+                      title="Bank churn competition on Kaggle"
+                      target="_blank"
+                    >
+                      bank churn competition
+                    </a>
+                    is to predict whether a customer continues with their
+                    account or closes it (churns).
                   </p>
                   <ul>
                     <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Consequatur, expedita. Alias expedita deserunt quas
-                      ratione dicta dignissimos assumenda, adipisci harum saepe
-                      facilis magni et laboriosam similique id, ut iste labore?
+                      I did a detailed analysis of the input features in order
+                      to understand what impact does each feature has on the
+                      target.
                     </li>
                     <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Officia modi iste culpa!
+                      The dataset had no missing values, however, there were
+                      duplicate rows and some non-numeric columns. I dropped the
+                      duplicate rows and one-hot encoded the non-numeric
+                      columns.
+                    </li>
+                    <li>
+                      To make the data preprocessing flexible and simple to use
+                      for new data, I created a complete pipeline to
+                      automatically perform the necessary steps.
+                    </li>
+                    <li>
+                      Based on the nature of the dataset, a decision tree
+                      ensemble model was the most suitable. For it, I used the
+                      <a
+                        href="https://lightgbm.readthedocs.io/en/stable/"
+                        title="LightGBM documentation"
+                        target="_blank"
+                      >
+                        LightGBM
+                      </a>
+                      framework.
+                    </li>
+                    <li>
+                      The best model was evaluted based on the
+                      <a
+                        href="https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc"
+                        title="ROC and AUC on Google Developers"
+                      >
+                        ROC AUC
+                      </a>
+                      criteria. It achieved a public score of roughly 0.75 on
+                      Kaggle, and I used this model to predict whether the
+                      customer will churn or not.
                     </li>
                   </ul>
                 </div>
                 <a
                   class="article-link"
-                  href="https://medium.com"
+                  href="https://www.kaggle.com/code/yahyavaleo/bank-churn"
                   target="_blank"
                 >
-                  Read Article
+                  Notebook
                 </a>
               </div>
             </article>

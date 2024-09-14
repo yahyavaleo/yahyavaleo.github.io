@@ -62,6 +62,7 @@ input {
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -120,7 +121,7 @@ body {
   max-width: 100%;
 }
 
-/* === Resume container : BEGIN === */
+/* === Resume container : END === */
 
 /* === Page header : BEGIN === */
 
@@ -288,6 +289,7 @@ body {
 .marquee-content {
   display: flex;
   align-items: center;
+  will-change: transform;
   animation: marquee 15s linear infinite;
 }
 
@@ -348,9 +350,6 @@ body {
   font-family: var(--font-heading);
   font-weight: 400;
   text-transform: uppercase;
-}
-
-@media (min-width: 1096px) {
 }
 
 /* ====== Project card : BEGIN ====== */
@@ -703,10 +702,15 @@ body {
 
   .page-header {
     z-index: 999;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     padding: 0 64px;
   }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+
   .navbar {
     gap: 64px;
   }
@@ -823,9 +827,6 @@ body {
 
   .project-body {
     height: 416px;
-  }
-
-  .project-body {
     font-size: 18px;
     line-height: 24px;
   }
@@ -933,6 +934,7 @@ body {
 
   .contact-section {
     padding: 48px;
+    padding-bottom: 64px;
     gap: 48px;
   }
 
@@ -976,6 +978,303 @@ body {
   .submit-button {
     height: 48px;
     font-size: 16px;
+  }
+
+  .page-footer {
+    height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  .copyright-year {
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .resume-container {
+    display: none;
+  }
+
+  .page-header {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-welcome {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 10vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    padding-left: 8px;
+  }
+
+  .hero-subheading {
+    font-size: 5vw;
+    padding-left: 8px;
+  }
+
+  .hero-subheading span {
+    padding: 0 4px;
+  }
+
+  .scroll-badge,
+  .scroll-arrow {
+    max-width: 150px;
+    max-height: 150px;
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+
+  .scroll-arrow img {
+    max-width: 92px;
+    max-height: 93px;
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .experience-content {
+    padding: 32px 20px;
+  }
+
+  .experience-content p {
+    font-size: 18px;
+  }
+
+  .experience-statement {
+    text-align: left;
+  }
+
+  .experience-marquee {
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+  }
+
+  .marquee-content {
+    gap: 5vw;
+  }
+
+  .experience-heading {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  .tech-stack {
+    grid-template-columns: repeat(auto-fit, 100px);
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .tech-icon {
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: none;
+    border-width: 1px;
+  }
+
+  .tech-icon img {
+    width: 85%;
+  }
+
+  .portfolio-section {
+    padding: 32px;
+    gap: 32px;
+  }
+
+  .portfolio-section h2 {
+    font-size: 10vw;
+  }
+
+  .project-card {
+    width: 95%;
+    padding: 14px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .project-body {
+    font-size: 18px;
+  }
+
+  .project-title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .project-description p {
+    margin: 16px 0;
+  }
+
+  .project-description ul {
+    margin: 8px 0;
+    padding-left: 20px;
+  }
+
+  .project-description li {
+    margin: 8px 0;
+    padding-left: 4px;
+  }
+
+  .project-link {
+    position: static;
+    margin: 16px 0;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  .articles-section {
+    padding: 32px 0 72px 0;
+    gap: 32px;
+  }
+
+  .articles-section h2 {
+    font-size: 10vw;
+  }
+
+  .article-accordion {
+    max-height: 88px;
+  }
+
+  .article-header {
+    width: 100%;
+    height: 88px;
+    padding: 10px 20px;
+    border-right: none;
+    border-left: none;
+  }
+
+  .article-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .article-date {
+    font-size: 16px;
+  }
+
+  .article-title {
+    font-size: 18px;
+  }
+
+  .article-cross {
+    width: 40px;
+    height: 40px;
+  }
+
+  .article-content {
+    border-right: none;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+  }
+
+  .article-summary {
+    border: none;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+
+  .article-summary p {
+    margin: 8px 0 16px 0;
+  }
+
+  .article-summary ul {
+    margin: 8px 0;
+    padding-left: 20px;
+  }
+
+  .article-summary li {
+    margin: 8px 0;
+    padding-left: 4px;
+  }
+
+  .article-link {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 8px 0;
+  }
+
+  .contact-section {
+    padding: 48px 32px;
+    gap: 32px;
+  }
+
+  .contact-section h2 {
+    font-size: 10vw;
+  }
+
+  .contact-form {
+    width: 95%;
+    padding: 24px 16px;
+    gap: 24px;
+    border-radius: 16px;
+  }
+
+  .contact-form li {
+    gap: 8px;
+  }
+
+  .visible-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .visible-fields label {
+    font-size: 16px;
+  }
+
+  .visible-fields input {
+    height: 40px;
+  }
+
+  .visible-fields input,
+  .visible-fields textarea {
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .visible-fields input::selection,
+  .visible-fields textarea::selection {
+    width: 100%;
+    color: var(--black);
+    background-color: #d661ff66;
+  }
+
+  .submit-button {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
   }
 
   .page-footer {
