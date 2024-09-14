@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const accordions = document.querySelectorAll(".article-accordion");
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const mobileLinks = document.querySelectorAll(".mobile-menu a");
 
   const openAccordion = (accordion) => {
     const content = accordion.querySelector(".article-content");
@@ -25,4 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const currentYear = new Date().getFullYear();
   document.querySelector(".copyright-year").textContent = currentYear;
+
+  hamburgerMenu.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("active");
+    mobileMenu.classList.toggle("show");
+  });
+
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      hamburgerMenu.classList.remove("active");
+      mobileMenu.classList.remove("show");
+    });
+  });
 });
