@@ -4,19 +4,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.querySelector(".mobile-menu");
   const mobileLinks = document.querySelectorAll(".mobile-menu a");
 
+  const setTabIndex = (accordion, value) => {
+    const focusableElements = accordion.querySelectorAll(
+      "a, button, input, textarea, select"
+    );
+    focusableElements.forEach((el) => {
+      el.tabIndex = value;
+    });
+  };
+
   const openAccordion = (accordion) => {
     const content = accordion.querySelector(".article-content");
     accordion.classList.add("expanded");
     accordion.style.maxHeight = content.scrollHeight + 90 + "px";
+    setTabIndex(accordion, 0);
   };
 
   const closeAccordion = (accordion) => {
     accordion.classList.remove("expanded");
     accordion.style.maxHeight = null;
+    setTabIndex(accordion, -1);
   };
 
   accordions.forEach((accordion) => {
     const header = accordion.querySelector(".article-header");
+    const isExpanded = accordion.classList.contains("expanded");
+
+    if (!isExpanded) {
+      setTabIndex(accordion, -1);
+    }
+
     header.onclick = () => {
       if (accordion.style.maxHeight) {
         closeAccordion(accordion);
