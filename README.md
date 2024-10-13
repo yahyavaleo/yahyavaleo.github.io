@@ -1,8 +1,8 @@
 # Personal Website
 
-This is my personal website that I wrote from scratch to showcase my work.
+This is my personal website that I wrote to showcase my work.
 
-<img src="assets/preview/preview.png" width="700">
+<img src="assets/preview/mockup.png" width="700">
 
 ## Structure
 
